@@ -49,9 +49,7 @@ export function useCompiti(spazioId?: SpazioId | null) {
       eseguito_da: payload.eseguito === true ? (payload.eseguito_da ?? null) : null,
       creato_da: creatoDaUid,
     }
-    const { data, error: e } = await supabase
-      .from('compiti')
-      .insert(row)
+    const { data, error: e } = await supabase.from('compiti').insert(row)
       .select()
       .single()
     if (e) throw new Error(e.message)
@@ -64,9 +62,7 @@ export function useCompiti(spazioId?: SpazioId | null) {
       ...payload,
       aggiornato_il: new Date().toISOString(),
     }
-    const { error: e } = await supabase
-      .from('compiti')
-      .update(updateRow)
+    const { error: e } = await supabase.from('compiti').update(updateRow)
       .eq('id', id)
     if (e) throw new Error(e.message)
     await fetch()

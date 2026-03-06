@@ -32,7 +32,7 @@ export function SpazioDetailPage() {
           costo: data.costo ?? null,
           eseguito: data.eseguito ?? false,
           assegnato_a: (data.assegnato_a as 'cyrolino' | 'cyrolina' | 'entrambi') ?? undefined,
-          eseguito_da: data.eseguito_da ?? null,
+          eseguito_da: (data.eseguito_da as 'cyrolino' | 'cyrolina' | 'entrambi' | null) ?? null,
         })
       } else {
         if (!data.assegnato_a) {
@@ -48,7 +48,7 @@ export function SpazioDetailPage() {
             costo: data.costo ?? null,
             eseguito: data.eseguito ?? false,
             assegnato_a: data.assegnato_a as 'cyrolino' | 'cyrolina' | 'entrambi',
-            eseguito_da: data.eseguito_da ?? null,
+            eseguito_da: (data.eseguito_da as 'cyrolino' | 'cyrolina' | 'entrambi' | null) ?? null,
           },
           creatoDa
         )
