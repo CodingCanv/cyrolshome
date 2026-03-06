@@ -12,6 +12,9 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0.75rem 1rem;
+  padding-top: max(0.75rem, env(safe-area-inset-top, 0px));
+  padding-left: max(1rem, env(safe-area-inset-left, 0px));
+  padding-right: max(1rem, env(safe-area-inset-right, 0px));
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -63,6 +66,9 @@
     url('/images/hero.png') center / cover no-repeat;
   flex-direction: column;
   padding: 1rem;
+  padding-left: max(1rem, env(safe-area-inset-left, 0px));
+  padding-right: max(1rem, env(safe-area-inset-right, 0px));
+  padding-bottom: max(1rem, env(safe-area-inset-bottom, 0px));
   gap: 0.5rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
