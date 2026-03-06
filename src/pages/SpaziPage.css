@@ -1,0 +1,42 @@
+.spazi-page h1 {
+  margin: 0 0 0.5rem;
+  font-size: 1.75rem;
+}
+
+.spazi-intro {
+  margin: 0 0 1.25rem;
+  color: var(--text-muted, #b0b0b0);
+  font-size: 0.95rem;
+}
+
+.spazi-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.spazi-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.25rem;
+  background: var(--bg-card, #1a1a2e);
+  border-radius: 12px;
+  color: inherit;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.15s;
+}
+
+.spazi-card:hover {
+  background: rgba(26, 26, 46, 0.9);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.spazi-card-arrow {
+  color: var(--text-muted, #888);
+  font-size: 1.25rem;
+}

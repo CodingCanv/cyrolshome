@@ -1,0 +1,72 @@
+.calendario-page h1 {
+  margin: 0 0 0.5rem;
+  font-size: 1.75rem;
+}
+
+.calendario-intro {
+  margin: 0 0 1rem;
+  color: var(--text-muted, #b0b0b0);
+  font-size: 0.95rem;
+}
+
+.calendario-wrapper {
+  background: var(--bg-card, #1a1a2e);
+  border-radius: 12px;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+.calendario-wrapper .fc {
+  --fc-border-color: rgba(255, 255, 255, 0.15);
+  --fc-today-bg-color: rgba(79, 195, 247, 0.15);
+  --fc-page-bg-color: transparent;
+  --fc-neutral-bg-color: rgba(255, 255, 255, 0.03);
+  --fc-list-event-hover-bg-color: rgba(255, 255, 255, 0.06);
+}
+
+.calendario-wrapper .fc-theme-standard td,
+.calendario-wrapper .fc-theme-standard th {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.calendario-wrapper .fc-toolbar-title {
+  font-size: 1.25rem;
+  color: var(--text, #e8e8e8);
+}
+
+.calendario-wrapper .fc-button {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: inherit;
+}
+
+.calendario-wrapper .fc-button:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.calendario-wrapper .fc-button-primary:not(:disabled).fc-button-active {
+  background: var(--accent, #4fc3f7);
+  border-color: var(--accent);
+  color: #1a1a2e;
+}
+
+.calendario-wrapper .fc-col-header-cell-cushion,
+.calendario-wrapper .fc-daygrid-day-number {
+  color: var(--text-muted, #b0b0b0);
+}
+
+.calendario-wrapper .fc-daygrid-day.fc-day-today .fc-daygrid-day-number {
+  background: var(--accent, #4fc3f7);
+  color: #1a1a2e;
+  border-radius: 50%;
+  padding: 0.2rem 0.4rem;
+}
+
+.calendario-wrapper .fc-event {
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.calendario-wrapper .fc-event-title {
+  font-weight: 500;
+}

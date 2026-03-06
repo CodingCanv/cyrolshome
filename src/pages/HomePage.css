@@ -1,0 +1,71 @@
+.home-page {
+  padding: 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.home-hero {
+  margin-bottom: 1rem;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.home-hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.home-page h1 {
+  margin: 0 0 1rem;
+  font-size: 1.75rem;
+}
+
+.home-intro {
+  margin: 0 0 1.5rem;
+  max-width: 400px;
+  color: var(--text-muted, #b0b0b0);
+  line-height: 1.5;
+}
+
+.home-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.home-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1.5rem 1rem;
+  min-width: 140px;
+  background: var(--bg-card, #1a1a2e);
+  border-radius: 12px;
+  color: inherit;
+  text-decoration: none;
+  font-weight: 500;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.home-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.home-card-icon {
+  font-size: 2rem;
+}
+
+.home-card-label {
+  font-size: 0.95rem;
+  text-align: center;
+}

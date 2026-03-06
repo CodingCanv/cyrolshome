@@ -1,0 +1,59 @@
+:root {
+  --bg-page: #16213e;
+  --bg-header: #1a1a2e;
+  --bg-card: #1a1a2e;
+  --text: #e8e8e8;
+  --text-muted: #b0b0b0;
+  --accent: #4fc3f7;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background: var(--bg-page);
+  color: var(--text);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+}
+
+.auth-loading {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+}
+
+.auth-loading p {
+  margin: 0;
+}
+
+/* Safe area per notch iPhone */
+@supports (padding: env(safe-area-inset-top)) {
+  .layout-main {
+    padding-left: max(1rem, env(safe-area-inset-left));
+    padding-right: max(1rem, env(safe-area-inset-right));
+    padding-bottom: max(1rem, env(safe-area-inset-bottom));
+  }
+  .header-inner {
+    padding-left: max(1rem, env(safe-area-inset-left));
+  }
+}

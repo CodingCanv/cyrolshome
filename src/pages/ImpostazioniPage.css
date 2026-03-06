@@ -1,0 +1,81 @@
+.impostazioni-page h1 {
+  margin: 0 0 1rem;
+  font-size: 1.75rem;
+}
+
+.impostazioni-section {
+  background: var(--bg-card, #1a1a2e);
+  border-radius: 12px;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.impostazioni-section h2 {
+  margin: 0 0 1rem;
+  font-size: 1.1rem;
+  color: var(--text-muted, #b0b0b0);
+}
+
+.impostazioni-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 320px;
+}
+
+.impostazioni-form label {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.impostazioni-form input {
+  padding: 0.6rem 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  color: inherit;
+  font-size: 1rem;
+}
+
+.impostazioni-form input:focus {
+  outline: none;
+  border-color: var(--accent, #4fc3f7);
+}
+
+.impostazioni-error {
+  margin: 0;
+  padding: 0.5rem;
+  background: rgba(244, 67, 54, 0.2);
+  border-radius: 8px;
+  color: #ff8a80;
+  font-size: 0.9rem;
+}
+
+.impostazioni-success {
+  margin: 0;
+  padding: 0.5rem;
+  background: rgba(76, 175, 80, 0.2);
+  border-radius: 8px;
+  color: #81c784;
+  font-size: 0.9rem;
+}
+
+.impostazioni-form .btn-primary {
+  margin-top: 0.25rem;
+  padding: 0.65rem 1.25rem;
+  background: var(--accent, #4fc3f7);
+  color: #1a1a2e;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.impostazioni-form .btn-primary:hover:not(:disabled) {
+  filter: brightness(1.1);
+}
+
+.impostazioni-form .btn-primary:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}

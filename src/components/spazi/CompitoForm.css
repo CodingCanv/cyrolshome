@@ -1,0 +1,80 @@
+.compito-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.compito-form label {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.compito-form input[type="text"],
+.compito-form input[type="date"],
+.compito-form input[type="number"],
+.compito-form select {
+  padding: 0.6rem 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  color: inherit;
+  font-size: 1rem;
+}
+
+.compito-form input:focus,
+.compito-form select:focus {
+  outline: none;
+  border-color: var(--accent, #4fc3f7);
+}
+
+.compito-form-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.compito-form-row input[type="checkbox"] {
+  width: 1.2rem;
+  height: 1.2rem;
+  accent-color: var(--accent, #4fc3f7);
+}
+
+.compito-form-row label {
+  margin: 0;
+}
+
+.compito-form-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+  justify-content: flex-end;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 0.65rem 1.25rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: var(--accent, #4fc3f7);
+  color: #1a1a2e;
+  border: none;
+}
+
+.btn-primary:hover {
+  filter: brightness(1.1);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--text-muted, #b0b0b0);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
