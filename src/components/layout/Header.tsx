@@ -18,7 +18,7 @@ export function Header() {
     <header className="header">
       <div className="header-inner">
         <Link to="/" className="header-title" onClick={() => setMenuOpen(false)}>
-          CyrolHome
+          Cyrol's Home
         </Link>
         <button
           type="button"
